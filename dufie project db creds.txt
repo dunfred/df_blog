@@ -1,0 +1,5 @@
+Database: dunfred_blogdb
+Username: dunfred_dufie
+Password: projectdufie
+
+
