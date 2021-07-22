@@ -6,12 +6,19 @@
 
 
 {% block body %}
+
     <h1>
         All posts
     </h1>
 
+    <form action="/posts" method="post">
+        Title: <input type="text" name="title" id="title"> <br>
+        Post: <input type="text" name="content" id="content"> <br>
+        <input type="submit" value="Post">
+    </form>
+
     {% for post in posts %}
     <h2>{{post.title}}</h2>
-    <p>{{post.description}}</p>
+    <p>{{post.content}}</p>
     {% endfor %}
 {% endblock body %}
